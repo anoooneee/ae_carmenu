@@ -1,4 +1,4 @@
-# 🚗 Cyril CarMenu
+# 🚗 AE CarMenu
 
 [![Discord](https://img.shields.io/discord/111111111111111111?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/hMMMDpXHJm)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -29,4 +29,4 @@ Found a bug or have a suggestion? Join our Discord server to get help or leave f
 ## 📄 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Developed with ❤️ for the FiveM community.
+Please leave a feedback on our discord
