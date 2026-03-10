@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cy_carmenu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu-container" id="main-container">
+        <div class="header-strip">
+            <div class="nav-bar">
+                <button onclick="switchTab('doors')" id="nav-doors" class="nav-item active">
+                    <i data-lucide="door-open" class="w-4 h-4"></i>
+                    <span class="nav-label" data-tab="doors">DVEŘE</span>
+                </button>
+                <button onclick="switchTab('windows')" id="nav-windows" class="nav-item">
+                    <i data-lucide="fold-vertical" class="w-4 h-4"></i>
+                    <span class="nav-label" data-tab="windows">OKNA</span>
+                </button>
+                <button onclick="switchTab('seats')" id="nav-seats" class="nav-item">
+                    <i data-lucide="armchair" class="w-4 h-4"></i>
+                    <span class="nav-label" data-tab="seats">SEDADLA</span>
+                </button>
+                <button onclick="switchTab('other')" id="nav-other" class="nav-item">
+                    <i data-lucide="zap" class="w-4 h-4"></i>
+                    <span class="nav-label" data-tab="status">STAV</span>
+                </button>
+            </div>
+            <div class="status-badge text-right">CYRIL CARMENU</div>
+        </div>
+
+        <div class="flex-grow flex items-center">
+            <div id="tab-doors" class="tab-content active"></div>
+
+            <div id="tab-windows" class="tab-content"></div>
+
+            <div id="tab-seats" class="tab-content"></div>
+
+            <div id="tab-other" class="tab-content">
+                <button id="engine-btn" onclick="toggleElement(this, 'engine', null)" class="control-btn"><i data-lucide="power"></i><span class="text-[9px] font-bold">MOTOR</span></button>
+                <button id="lock-btn" onclick="toggleElement(this, 'lock', null)" class="control-btn"><i data-lucide="lock"></i><span class="text-[9px] font-bold">ZÁMEK</span></button>
+                <div class="w-[1px] h-10 bg-white/5 mx-2 flex-shrink-0"></div>
+                <button onclick="sendAction('toggleInteriorLights')" class="control-btn shuffle-btn"><i data-lucide="lightbulb"></i><span class="text-[11px] font-bold">OSVĚTLENÍ</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
