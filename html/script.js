@@ -9,7 +9,7 @@ let navLabels = {};
 let statusBadgeEl;
 
 let uiLocales = {
-    header: 'CYRIL CARMENU',
+    header: 'AE CARMENU',
     tabs: {
         doors: 'DVEŘE',
         windows: 'OKNA',
